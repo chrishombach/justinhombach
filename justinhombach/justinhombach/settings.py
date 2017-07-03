@@ -25,7 +25,7 @@ SECRET_KEY = '7y^&c=#n-960jot(sftg7^ziq%bcb1l7(v2r&j)hu#p6m(c=ri'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'chombach.pythonanywhere.com']
 
 
 # Application definition
