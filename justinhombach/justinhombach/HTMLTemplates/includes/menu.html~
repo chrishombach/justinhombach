@@ -1,0 +1,49 @@
+<div class="menu" >
+  <h1>Justin Hombach - Guitar god and more...</h1>
+  <ul>
+  {% if name == "News" %}
+    <li><a class="active" href="{% url 'news' %}">News</a></li>
+  {% else %}
+    <li><a href="{% url 'news' %}">News</a></li>
+  {% endif %}
+  {% if name == "About" %}
+    <li><a class="active" href="{% url 'about' %}">About</a></li>
+  {% else %}
+    <li><a href="{% url 'about' %}">About</a></li>
+  {% endif %}
+  {% if name == "Lessons" %}
+    <li><a class="active" href="{% url 'lessons' %}">Lessons</a></li>
+  {% else %}
+    <li><a href="{% url 'lessons' %}">Lessons</a></li>
+  {% endif %}
+  {% if name == "Work" %}
+    <li><a class="active" href="{% url 'work' %}">Work</a></li>
+  {% else %}
+    <li><a href="{% url 'work' %}">Work</a></li>
+  {% endif %}
+  {% if name == "Media" %}
+    <li><a class="active" href="{% url 'media' %}">Media</a></li>
+  {% else %}
+    <li><a href="{% url 'media' %}">Media</a></li>
+  {% endif %}
+  {% if name == "Contact" %}
+    <li><a class="active" href="{% url 'contact' %}">Contact</a></li>
+  {% else %}
+    <li><a href="{% url 'contact' %}">Contact</a></li>
+  {% endif %}
+
+
+  <li style="float:right">
+  <a target="_blank" title="follow me on twitter" href="http://www.twitter.com/justinhombach"><img alt="follow me on twitter" src="//login.create.net/images/icons/user/twitter_30x30.png" border=0></a>
+</li>
+<li style="float:right">
+<a target="_blank" title="find us on Facebook" href="http://www.facebook.com/Justin-Hombach-234911649893127/"><img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
+</ul>
+</li>
+
+
+</div>
+<div class="menuimg">
+{% load static %}
+<img  src="{% static "" %}justinhombach/{{ name }}.jpg"  />
+</div>

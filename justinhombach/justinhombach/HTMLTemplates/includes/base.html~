@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% load staticfiles %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'justinhombach/styletmp.css' %}" >
+    
+</head>
+
+<body>
+{% include "includes/menu.html" %}
+
+
+<div>
+    <h1>My helpful timestamp side</h1>
+    {% block content %} {% endblock %}
+    {% block footer %}
+    <hr>
+    <p>Thanks for visiting my site.</p>
+    {% endblock %}
+</div>
+</body>
+</html>
