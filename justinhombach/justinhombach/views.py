@@ -10,9 +10,9 @@ def current_datetime(request):
 
 def news(request):
     name = "News"
-    #posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     posts = Post.objects.all()
-    print posts
+    
     return render_to_response('news.html', locals())
 
 def about(request):

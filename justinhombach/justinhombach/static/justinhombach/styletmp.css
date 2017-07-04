@@ -19,38 +19,6 @@
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         
     }
-    .post {
-        width: 800px;
-        margin: 10px auto 10px;
-        padding: 50px;
-        background-color: var(--COLORB);
-        border-radius: 1em;
-    }
-
-    .posttitle {
-	font-size: 20pt;
-	color: var(--COLORA); 
-    }
-    .postdate {
-	font-size: 12pt;
-	color: var(--COLORA); 
-    }
-    a:link, a:visited {
-        color: #38488f;
-        text-decoration: none;
-    }
-    @media (max-width: 700px) {
-        body {
-            background-color: #fff;
-        }
-        div {
-            width: auto;
-            margin: 0 auto;
-            border-radius: 0;
-            padding: 1em;
-        }
-    }
- 
    .menu {
        width: auto;
        margin: 0 ;
@@ -90,7 +58,7 @@
    .menu li a {
        vertical-align: middle;
        display: block;
-       color: white;
+       color: var(--COLORB);
        text-align: left;
        padding: 8px 16px;
        text-decoration: none;
@@ -114,4 +82,37 @@
    .active {
        background-color: var(--COLORB);
        margin: 0;
+       color: var(--COLORA);
    }
+    .post {
+        width: 800px;
+        margin: 10px auto 10px;
+        padding: 50px;
+        background-color: var(--COLORB);
+        border-radius: 1em;
+    }
+
+    .posttitle {
+	font-size: 20pt;
+	color: var(--COLORA); 
+    }
+    .postdate {
+	font-size: 12pt;
+	color: var(--COLORA); 
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        body {
+            background-color: #fff;
+        }
+        div {
+            width: auto;
+            margin: 0 auto;
+            border-radius: 0;
+            padding: 1em;
+        }
+    }
+ 
